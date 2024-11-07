@@ -12,10 +12,8 @@ function App() {
   let handleChangeColor = () => {};
   setCar((prev) => {
     return {
-      name: "Toyota",
-      color: "gray",
-      model: "hilux",
-      year: "2024",
+      ...prev,
+      color: "white",
     };
   });
   return (
@@ -24,7 +22,7 @@ function App() {
       <h2>
         It is a {car.color} {car.model} from {car.year}
       </h2>
-      <button onClick={handleChangeColor}>change car</button>
+      <button onClick={handleChangeColor}>change color</button>
     </>
   );
 }
