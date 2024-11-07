@@ -9,13 +9,14 @@ function App() {
     model: "S550",
     year: "2023",
   });
-  let handleChangeColor = () => {};
-  setCar((prev) => {
-    return {
-      ...prev,
-      color: "white",
-    };
-  });
+  let handleChangeColor = () => {
+    setCar((prev) => {
+      return {
+        ...prev,
+        color: "white",
+      };
+    });
+  };
   return (
     <>
       <h1>My favorate car is {car.name}</h1>
