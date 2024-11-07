@@ -1,5 +1,16 @@
+import { useEffect, useState } from "react";
 function EffectHook() {
-  return <div>hello</div>;
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 2000);
+  });
+  return (
+    <div>
+      <h1>i rendered {count} times!</h1>
+    </div>
+  );
 }
 
 export default EffectHook;
