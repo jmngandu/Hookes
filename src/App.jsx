@@ -3,15 +3,28 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [color, setColor] = useState("blue");
-
-  let handleChangeColor = () => {
-    setColor("green");
-  };
+  const [car, setCar] = useState({
+    name: "mercedes",
+    color: "black",
+    model: "S550",
+    year: "2023",
+  });
+  let handleChangeColor = () => {};
+  setCar((prev) => {
+    return {
+      name: "Toyota",
+      color: "gray",
+      model: "hilux",
+      year: "2024",
+    };
+  });
   return (
     <>
-      <h1>I like color {color}</h1>
-      <button onClick={handleChangeColor}>change</button>
+      <h1>My favorate car is {car.name}</h1>
+      <h2>
+        It is a {car.color} {car.model} from {car.year}
+      </h2>
+      <button onClick={handleChangeColor}>change car</button>
     </>
   );
 }
