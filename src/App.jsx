@@ -6,8 +6,8 @@ import StateHook from "./pages/stateHook";
 function App() {
   return (
     <>
-      <StateHook />
-      <EffectHook />
+      {/* <StateHook />
+      <EffectHook /> */}
       <RefHook />
     </>
   );
