@@ -1,7 +1,7 @@
 import "./App.css";
-import EffectHook from "./pages/effectHook";
+// import StateHook from "./pages/stateHook";
+// import EffectHook from "./pages/effectHook";
 import RefHook from "./pages/refHook";
-import StateHook from "./pages/stateHook";
 
 function App() {
   return (
