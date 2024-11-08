@@ -7,6 +7,10 @@ const RefHook = () => {
   useEffect(() => {
     count.current = count.current + 1;
   });
+  let handleRef = () => {
+    inputEl.current.style.backgroundColor = "green";
+    console.log(inputEl.current);
+  };
   return (
     <>
       <button onClick={() => setValue((prev) => prev - 1)}>-1</button>
@@ -14,6 +18,7 @@ const RefHook = () => {
       <button onClick={() => setValue((prev) => prev + 1)}>+1</button>
       <h1>Render Count: {count.current}</h1>
       <input type="text" ref={inputEl} />
+      <button onClick={handleRef}>Clicked</button>
     </>
   );
 };
