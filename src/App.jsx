@@ -1,5 +1,5 @@
 import "./App.css";
-import EffectHook from "./effectHook";
+import EffectHook from "./pages/effectHook";
 import StateHook from "./pages/stateHook";
 
 function App() {

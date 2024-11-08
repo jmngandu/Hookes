@@ -5,7 +5,7 @@ function EffectHook() {
     setTimeout(() => {
       setCount((count) => count + 1);
     }, 2000);
-  }, [count]);
+  }, [count]); //whenever count changes it updates
   return (
     <div>
       <h1>i rendered {count} times!</h1>
